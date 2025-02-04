@@ -14,6 +14,11 @@
 		3E43E6262D50EF450023681D /* foodDeliveryMiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43E6252D50EF450023681D /* foodDeliveryMiniTests.swift */; };
 		3E43E6302D50EF450023681D /* foodDeliveryMiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43E62F2D50EF450023681D /* foodDeliveryMiniUITests.swift */; };
 		3E43E6322D50EF450023681D /* foodDeliveryMiniUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E43E6312D50EF450023681D /* foodDeliveryMiniUITestsLaunchTests.swift */; };
+		3EAD8A622D524DA000773899 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD8A612D524DA000773899 /* WelcomeView.swift */; };
+		3EAD8A642D524E0400773899 /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 3EAD8A632D524E0400773899 /* Font */; };
+		3EAD8A692D524EF600773899 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD8A682D524EF600773899 /* Font.swift */; };
+		3EAD8A6B2D524F0100773899 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD8A6A2D524F0100773899 /* Color.swift */; };
+		3EAD8A6D2D5251CA00773899 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD8A6C2D5251CA00773899 /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,12 @@
 		3E43E62B2D50EF450023681D /* foodDeliveryMiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = foodDeliveryMiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E43E62F2D50EF450023681D /* foodDeliveryMiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDeliveryMiniUITests.swift; sourceTree = "<group>"; };
 		3E43E6312D50EF450023681D /* foodDeliveryMiniUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDeliveryMiniUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3EAD8A612D524DA000773899 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3EAD8A632D524E0400773899 /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
+		3EAD8A652D524E2500773899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3EAD8A682D524EF600773899 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		3EAD8A6A2D524F0100773899 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		3EAD8A6C2D5251CA00773899 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +105,10 @@
 		3E43E6132D50EF440023681D /* foodDeliveryMini */ = {
 			isa = PBXGroup;
 			children = (
+				3EAD8A662D524E7B00773899 /* UICommon */,
+				3EAD8A652D524E2500773899 /* Info.plist */,
+				3EAD8A632D524E0400773899 /* Font */,
+				3EAD8A5F2D524D7F00773899 /* View */,
 				3E43E6142D50EF440023681D /* foodDeliveryMiniApp.swift */,
 				3E43E6162D50EF440023681D /* ContentView.swift */,
 				3E43E6182D50EF450023681D /* Assets.xcassets */,
@@ -125,6 +140,32 @@
 				3E43E6312D50EF450023681D /* foodDeliveryMiniUITestsLaunchTests.swift */,
 			);
 			path = foodDeliveryMiniUITests;
+			sourceTree = "<group>";
+		};
+		3EAD8A5F2D524D7F00773899 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EAD8A602D524D8C00773899 /* LogIn */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EAD8A602D524D8C00773899 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				3EAD8A612D524DA000773899 /* WelcomeView.swift */,
+				3EAD8A6C2D5251CA00773899 /* SignInView.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		3EAD8A662D524E7B00773899 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				3EAD8A682D524EF600773899 /* Font.swift */,
+				3EAD8A6A2D524F0100773899 /* Color.swift */,
+			);
+			path = UICommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E43E61C2D50EF450023681D /* Preview Assets.xcassets in Resources */,
+				3EAD8A642D524E0400773899 /* Font in Resources */,
 				3E43E6192D50EF450023681D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAD8A6D2D5251CA00773899 /* SignInView.swift in Sources */,
+				3EAD8A692D524EF600773899 /* Font.swift in Sources */,
 				3E43E6172D50EF440023681D /* ContentView.swift in Sources */,
+				3EAD8A622D524DA000773899 /* WelcomeView.swift in Sources */,
+				3EAD8A6B2D524F0100773899 /* Color.swift in Sources */,
 				3E43E6152D50EF440023681D /* foodDeliveryMiniApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +470,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"foodDeliveryMini/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = foodDeliveryMini/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +499,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"foodDeliveryMini/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = foodDeliveryMini/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
